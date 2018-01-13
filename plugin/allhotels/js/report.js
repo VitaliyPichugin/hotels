@@ -45,12 +45,12 @@ jQuery( document ).ready(function($) {
         if(new_price[i] < old_price[i]){
             $(".row_hotel:eq('+i+')").parent().css('background-color', 'brown');
         }
-/*        if(new_price[i] > old_price[i]){
+        if(new_price[i] > old_price[i]){
             $(".row_hotel:eq('+i+')").parent().css('background-color', 'blue');
         }
         if(new_price[i] == old_price[i]){
             $(".row_hotel:eq('+i+')").parent().css('background-color', 'yellow');
-        }*/
+        }
     }
 
     $("tr>.hotel_status").each(function () {
