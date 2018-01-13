@@ -50,7 +50,7 @@ jQuery( document ).ready(function($) {
     $("tr>.hotel_status").each(function () {
         var self =  $(this);
         if ($(this).text() == 'Отель не найден') {
-            $(self ).parent().css('background-color', '#FF7F50');
+            $(self ).parent().css('background-color', '#B22222');
         }
     });
 
