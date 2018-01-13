@@ -1,68 +1,57 @@
+
 jQuery( document ).ready(function($) {
 
-    $("tr").each(function () {
-        var self =  $(this);
-        if ($(this).hasClass('row_hotel')) {
-            $(self).css('background-color', '#98FB98');
-        }
-    });
-    var old_price=[];
-    var new_price=[];
+    function get_price(selector) {
+        var i = 0;
+        var get_price = [];
+        $(selector).each(function () {
 
-    var i=0;
-    $("tr>.hotel_price").each(function () {
-        var price = $(this).text();
-        var n_price;
-            try{
+            var price = $(this).text();
+            var n_price;
+            try {
                 n_price = price.split(' ');
 
-            }catch (ex){
+            } catch (ex) {
                 console.log(ex);
             }
-        old_price[i] = parseInt(n_price[0]);
-        i++;
+            get_price[i] = (Number)(n_price[0]);
+            i++;
+        });
+        return get_price;
+    }
 
-    });
-    $("tr>.hotel_update_price").each(function () {
-        var price = $(this).text();
-        var new_price;
-        try{
-            new_price = price.split(' ');
+    $('.row_hotel').each(function () {
+        var new_price =  $(this ).find('.hotel_update_price').text();
+        var old_price =  $(this ).find('.hotel_price').text();
 
-        }catch (ex){
+        try {
+            new_price = new_price.split(' ');
+            old_price = old_price.split(' ');
+
+            var price_old = parseInt(old_price[0]);
+            var price_new = parseInt(new_price[0]);
+
+            if(price_old < price_new){
+                $(this).css('background-color', '#D2691E');
+            }
+            if(price_old == price_new){
+                $(this).css('background-color', '#3CB371');
+            }
+            if(price_old > price_new){
+                $(this).css('background-color', '#D2691E');
+            }
+        } catch (ex) {
             console.log(ex);
         }
-        new_price[i] = parseInt(new_price[0]);
-        i++;
 
     });
 
-   // for(var k = 0; k<old_price.length; i++){
-       // console.log(old_price);
-   // }
-
-    for(var i=0; i<new_price.length; i++){
-        if(new_price[i] < old_price[i]){
-            $(".row_hotel:eq('+i+')").parent().css('background-color', 'brown');
-        }
-        if(new_price[i] > old_price[i]){
-            $(".row_hotel:eq('+i+')").parent().css('background-color', 'blue');
-        }
-        if(new_price[i] == old_price[i]){
-            $(".row_hotel:eq('+i+')").parent().css('background-color', 'yellow');
-        }
-    }
 
     $("tr>.hotel_status").each(function () {
         var self =  $(this);
         if ($(this).text() == 'Отель не найден') {
             $(self ).parent().css('background-color', '#FF7F50');
-            //   i++;
         }
     });
-
-/*    for(var i=0; i<links.length; i++){hotel_update_price
-        links.style('color', 'red');
-    }*/
 
 });
