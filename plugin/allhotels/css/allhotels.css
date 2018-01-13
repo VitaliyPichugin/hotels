@@ -1,0 +1,322 @@
+/*
+Theme Name: All_hotels
+Description: Styles for allhotels.
+*/
+
+/* Настройки страницы Meta */
+
+/* Кнопки */
+div.mail_editor {
+	max-width: 60%;
+	border: solid 1px #aaaaaa;
+	margin-bottom: 30px;
+}
+.btn_mail_green,
+.btn_mail_brown,
+.btn_mail_white {
+	border-radius: 8px;
+	text-transform: none;
+	padding: 6px;
+	margin: 0 30px 20px 10px;
+	text-decoration: none;
+}
+.btn_mail_text {
+	background: #ffffff;
+	border: solid 1px #ffffff;
+	margin: 0;
+	padding: 0;
+	color: blue;
+	font-weight: 400;
+	text-transform: none;
+	text-decoration: underline;
+}
+.btn_mail_text:hover  {
+	color: #777777;
+	background: #ffffff;
+	text-decoration: none;
+}
+.btn_mail_brown {
+	background: brown;
+	border: solid 1px brown;
+}
+.btn_mail_green {
+	background: green;
+	border: solid 1px green;
+}
+.btn_mail_white {
+	background: white;
+	border: solid 1px grey;
+}
+div.button_start {
+	border-radius: 8px;
+	text-transform: none;
+	padding: 0 6px 1px 6px;
+	margin: 0 30px 20px 10px;
+	background: green;
+	border: solid 1px green;
+	color: #FFFFFF;
+	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-weight: 700;
+	width: inherit;
+	display: inline-block;
+}
+div.button_start:hover {
+	background: #007acc;
+	border: solid 1px #007acc;
+}
+
+/* Таблица отелей */
+table.hotels {
+	font-size: 90%;
+}
+tr.hotels {
+	background: #FFFFFF;
+}
+tr.hotels:hover {
+	background: #E6E6E6;
+}
+td.hotels_link {
+	font-size: 80%;
+	width: 100px;
+	text-align: center;
+}
+td.hotels_stars {
+	width: 30px;
+}
+td.hotels_region {
+	width: 150px;
+}
+.region_select {
+	display: inline-block;
+}
+.hotel_search {
+	display: inline-block;
+	vertical-align: top;
+	width: 80%;
+}
+/* Таблица отелей для iPhone */
+.iphone_hotels_select {
+	padding: 10px;
+	width: 100%;
+	font-size: 16px;
+	background: #EDEDFF;
+}
+.iphone_hotels_select:hover {
+	background: #BFFFF5;
+}
+.iphone_hotels_noselect {
+	padding: 10px;
+	width: 100%;
+	font-size: 16px;
+	background: #EDEDFF;
+}
+/* Таблица листов для iPhone*/
+.iphone_list_hotel {
+	width: 100%;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	background: #EDEDFF;
+}
+.iphone_list_link {
+	width: 100%;
+	font-size: 16px;
+	padding: 10px;
+	margin-bottom: 20px;
+	background: #BFFFF5;
+}
+.iphone_list_header {
+	width: 100%;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	border: solid 1px #777777;
+}
+.iphone_list_anchor {
+	width: 100%;
+	font-size: 16px;
+	font-style: italic;
+	padding: 10px;
+	margin-top: 20px;
+	border: solid 1px green;
+	padding-left: 50px;
+	color: green;
+}
+/* Таблица регионов */
+table.regions {
+	font-size: 85%;
+}
+tr.regions {
+	background: #FFFFFF;
+}
+tr.regions:hover {
+	background: #E6E6E6;
+}
+td.regions_country {
+	width: 100px;
+}
+td.regions_link {
+	font-size: 90%;
+	width: 105px;
+	text-align: center;
+}
+/* Таблица запросов */
+table.requests {
+	font-size: 90%;
+}
+tr.requests {
+	background: #FFFFFF;
+}
+tr.requests:hover {
+	background: #E6E6E6;
+}
+td.requests_date {
+	width: 80px;
+}
+td.requests_ip {
+	font-size: 85%;
+	width: 90px;
+}
+td.requests_type {
+	width: 90px;
+}
+td.requests_hotel {
+
+}
+td.requests_start_date {
+	width: 90px;
+}
+td.requests_price {
+	width: 90px;
+}
+td.requests_status {
+	width: 54px;
+}
+td.requests_note {
+	font-size: 90%;
+	width: 300px;
+	color: blue;
+}
+/* Таблица запросов для iPhone*/
+.iphone_requests {
+	width: 100%;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	color: #000000;
+	border: solid 1px #777777;
+}
+/* Список отелей */
+table.list {
+	font-size: 90%;
+	margin-top: 20px;
+}
+tr.list {
+	background: #FFFFFF;
+}
+tr.list:hover {
+	background: #E6E6E6;
+}
+td.list_link {
+	font-size: 80%;
+	width: 72px;
+	text-align: center;
+}
+td.list_stars {
+	width: 30px;
+}
+td.list_number {
+	width: 20px;
+	vertical-align: top;
+	text-align: center;
+	font-weight: 600;
+}
+td.list_checkbox {
+	vertical-align: top;
+	width: 20px;
+	padding: 6px 0 0 4px;
+}
+td.list_title {
+	width: 280px;
+	color: blue;
+}
+td.list_date {
+	width: 90px;
+}
+td.list_days {
+	width: 70px;
+}
+td.list_from {
+	width: 110px;
+}
+td.list_price {
+	width: 80px;
+}
+td.list_note {
+	color: blue;
+}
+
+/* Временно настройки модулей для вывода тестовой информации об отеле */
+div.hotel_small {
+	display: inline-block;
+    width: 400px;
+    background-color: #FFFFFF;
+    border:solid 1px #650608;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 1px 1px 3px 3px #D0D0D0;
+    margin: 0 3px 5px 3px;
+    padding: 6px 0;
+}
+div.hotel_small:hover {
+    box-shadow: 1px 1px 3px 3px #BB9293;
+	background-color: #FDFDFD;
+}
+div.hotel_small_title {
+	font-weight: 500;
+	background-color: #650608;
+	color: #FFFFFF;
+	text-align: center;
+	margin-bottom: 3px;
+	padding: 3px 0;
+	font-size: 110%;
+}
+div.hotel_small_left {
+	display: inline-block;
+	width: 230px;
+    height: 153px;
+	text-align: center;
+}
+.hotel_small_img {
+    max-width: 100%;
+    max-height: 100%;
+	vertical-align: middle;
+}
+div.hotel_small_data {
+	margin: 10px 5px 0 5px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+    width: 140px;
+}
+.hotel_small_annotate {
+    padding-top: 4px;
+}
+/* --- */
+div.hotel_big_left {
+	display: inline-block;
+	width: 630px;
+	border-right: 1px solid #DDD;
+	padding: 10px;
+}
+div.hotel_big_slide {
+	width: 600px;
+	height: 400px;
+	text-align: center;
+	vertical-align: middle;
+}
+.hotel_big_img {
+    max-width: 100%;
+    max-height: 100%;
+	vertical-align: middle;
+}
