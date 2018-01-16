@@ -8,8 +8,9 @@ function report()
     echo '<form method="post"><input type="submit" name="get_report" value="Обновить данные">';
     switch ($_POST['get_report']){
         case 'Обновить данные':{
-            update_base();
-            update_report();
+            update_old_report();//обновляем старый отчет для сравнения с новым
+            update_base();//получаем актуальные отели для сравнения
+            update_report();//начинаем сравнивать
             break;
         }
         case 'Обновить базу отелей':{
@@ -61,6 +62,7 @@ function update_report(){
                     'update_price' => $price_once,
                     'link_hotel' => 'http://www.t.zp.ua/%D0%BF%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D1%82%D1%83%D1%80%D0%B0?id='.$return['offers'][0]['key'].'&search=0',
                     'update' => 1
+
                 ), array(
                     'id_ittour' => $data[$i]->id_ittour,
                     'meal_ittour_id' => $data[$i]->meal_ittour_id,
@@ -71,7 +73,6 @@ function update_report(){
     }
     $fill_table = $wpdb->get_results("SELECT * FROM all_report");
     show_table($fill_table);
-
 }
 //прорисовка таблицы
 function show_table($data){
@@ -90,12 +91,21 @@ function show_table($data){
      <td>Дата последнего обновления</td>
     </tr>';
 
+    get_price($old_data, 'all_old_report');
+    get_price($new_data, 'all_report');
+
     foreach ($data as $key=>$val){
         if($val->link_hotel != 'Link is not defined'){
-            $link = "<a href='".$val->link_hotel."'>Ссылка на отель(ITtour)</a>";
+            $link = "<a href='".$val->link_hotel."'>Ссылка (ITtour)</a>";
         } else $link = 'Link is not defined';
 
-        echo '<tr class="row_hotel"> 
+        if($old_data[$key]['old_price'] != $new_data[$key]['old_price'] || $old_data[$key]['new_price'] != $new_data[$key]['new_price'] ){
+            $class = 'row_hotel';
+        }else{
+            $class = 'row_hotel_updated';
+        }
+
+        echo '<tr class="'.$class.'"> 
         <td >'.$val->hotel_title.' '.$val->hotel_stars.'</td>
         <td>'.$val->meal_name.'</td>
         <td class="hotel_from">'.$val->date_from.'</td>
@@ -163,10 +173,23 @@ function update_base(){
             )
         );
     }
-
-   // $fill_table = $wpdb->get_results("SELECT * FROM all_report");
-
-/*    echo '<h1 style="text-align: center">Таблица отчетов</h1>';
-
-    show_table($fill_table);*/
 }
+//получаем прайсы
+function get_price(&$return, $table){
+    global $wpdb;
+
+    $data = $wpdb->get_results('SELECT price, update_price FROM '.$table);
+
+    foreach ($data as $key => $item) {
+        $return[$key]['old_price'] = $item->price;
+        $return[$key]['new_price'] = $item->update_price;
+    }
+    return $return;
+}
+//обновляем таблицу старых отчетов
+function update_old_report(){
+    global $wpdb;
+    $wpdb->query('TRUNCATE TABLE all_old_report');
+    $wpdb->query('INSERT INTO a103_hotelstzpua.all_old_report SELECT * FROM a103_hotelstzpua.all_report');
+}
+

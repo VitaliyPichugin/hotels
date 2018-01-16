@@ -21,37 +21,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="report.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="report.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plugin/allhotels/js/report.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="46" column="48" lean-forward="false" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+            <state relative-caret-position="524">
+              <caret line="54" column="48" lean-forward="true" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hotel_report.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hotel_report.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugin/allhotels/php/hotel_report.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            <state relative-caret-position="626">
+              <caret line="107" column="17" lean-forward="false" selection-start-line="107" selection-start-column="15" selection-end-line="107" selection-end-column="17" />
               <folding>
                 <element signature="n#update_report#0;n#!!top" expanded="false" />
-                <element signature="n#show_table#0;n#!!top" expanded="false" />
                 <element signature="n#update_base#0;n#!!top" expanded="false" />
-                <marker date="1516093335334" expanded="true" signature="541:565" ph="SELECT * FRO... all_report" />
-                <marker date="1516093335334" expanded="true" signature="598:616" ph="..." />
-                <marker date="1516093335334" expanded="true" signature="835:878" ph="SELECT * FRO... all_report" />
-                <marker date="1516093335334" expanded="true" signature="904:922" ph="..." />
-                <marker date="1516093335334" expanded="true" signature="2781:2805" ph="SELECT * FRO... all_report" />
-                <marker date="1516093335334" expanded="true" signature="2911:3251" ph="..." />
-                <marker date="1516093335334" expanded="false" signature="2923:2948" ph="..." />
-                <marker date="1516093335334" expanded="true" signature="2949:3251" ph="..." />
-                <marker date="1516093335334" expanded="true" signature="3510:4153" ph="..." />
-                <marker date="1516093335334" expanded="true" signature="4346:5559" ph="SELECT ittou... all_hotels" />
-                <marker date="1516093335334" expanded="true" signature="7074:7098" ph="SELECT * FRO... all_report" />
-                <marker date="1516093335334" expanded="true" signature="7126:7144" ph="..." />
+                <element signature="n#get_price#0;n#!!top" expanded="false" />
+                <element signature="n#update_old_report#0;n#!!top" expanded="false" />
+                <marker date="1516116142543" expanded="true" signature="682:706" ph="SELECT * FRO... all_report" />
+                <marker date="1516116142543" expanded="true" signature="739:757" ph="..." />
+                <marker date="1516116142543" expanded="true" signature="976:1019" ph="SELECT * FRO... all_report" />
+                <marker date="1516116142543" expanded="true" signature="1045:1063" ph="..." />
+                <marker date="1516116142543" expanded="true" signature="2923:2947" ph="SELECT * FRO... all_report" />
+                <marker date="1516116142543" expanded="true" signature="3052:3392" ph="..." />
+                <marker date="1516116142543" expanded="false" signature="3064:3089" ph="..." />
+                <marker date="1516116142543" expanded="true" signature="3090:3392" ph="..." />
+                <marker date="1516116142543" expanded="true" signature="4806:6019" ph="SELECT ittou... all_hotels" />
+                <marker date="1516116142543" expanded="true" signature="7602:7633" ph="SELECT price... all_old_report" />
+                <marker date="1516116142543" expanded="true" signature="7602:7634" ph="SELECT price... ${$table}" />
+                <marker date="1516116142543" expanded="true" signature="7974:8059" ph="INSERT INTO a103_hotelstzpua.all_old_report... " />
+                <marker date="1516116142543" expanded="true" signature="8018:8059" ph="SELECT * FRO... all_report" />
               </folding>
             </state>
           </provider>
@@ -62,6 +64,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>form</find>
+      <find>get_old_price</find>
+      <find>show_table</find>
+      <find>trunca</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -70,8 +75,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/plugin/allhotels/js/report.js" />
         <option value="$PROJECT_DIR$/plugin/allhotels/php/hotel_report.php" />
+        <option value="$PROJECT_DIR$/plugin/allhotels/js/report.js" />
       </list>
     </option>
   </component>
@@ -82,9 +87,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="179" />
-    <option name="y" value="-20" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="170" />
+    <option name="y" value="143" />
     <option name="width" value="1380" />
     <option name="height" value="735" />
   </component>
@@ -174,18 +179,18 @@
       <updated>1515870731792</updated>
       <workItem from="1515870733295" duration="651000" />
       <workItem from="1516004693003" duration="20701000" />
-      <workItem from="1516086795206" duration="2659000" />
+      <workItem from="1516086795206" duration="16290000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24011000" />
+    <option name="totallyTimeSpent" value="37642000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="170" y="143" width="1380" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17760417" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -229,20 +234,22 @@
           <caret line="82" column="20" lean-forward="false" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="20" />
           <folding>
             <element signature="n#update_report#0;n#!!top" expanded="false" />
-            <element signature="n#show_table#0;n#!!top" expanded="false" />
             <element signature="n#update_base#0;n#!!top" expanded="false" />
-            <marker date="1516093335334" expanded="true" signature="541:565" ph="SELECT * FRO... all_report" />
-            <marker date="1516093335334" expanded="true" signature="598:616" ph="..." />
-            <marker date="1516093335334" expanded="true" signature="835:878" ph="SELECT * FRO... all_report" />
-            <marker date="1516093335334" expanded="true" signature="904:922" ph="..." />
-            <marker date="1516093335334" expanded="true" signature="2781:2805" ph="SELECT * FRO... all_report" />
-            <marker date="1516093335334" expanded="true" signature="2911:3251" ph="..." />
-            <marker date="1516093335334" expanded="false" signature="2923:2948" ph="..." />
-            <marker date="1516093335334" expanded="true" signature="2949:3251" ph="..." />
-            <marker date="1516093335334" expanded="true" signature="3510:4153" ph="..." />
-            <marker date="1516093335334" expanded="true" signature="4346:5559" ph="SELECT ittou... all_hotels" />
-            <marker date="1516093335334" expanded="true" signature="7074:7098" ph="SELECT * FRO... all_report" />
-            <marker date="1516093335334" expanded="true" signature="7126:7144" ph="..." />
+            <element signature="n#get_price#0;n#!!top" expanded="false" />
+            <element signature="n#update_old_report#0;n#!!top" expanded="false" />
+            <marker date="1516116142543" expanded="true" signature="682:706" ph="SELECT * FRO... all_report" />
+            <marker date="1516116142543" expanded="true" signature="739:757" ph="..." />
+            <marker date="1516116142543" expanded="true" signature="976:1019" ph="SELECT * FRO... all_report" />
+            <marker date="1516116142543" expanded="true" signature="1045:1063" ph="..." />
+            <marker date="1516116142543" expanded="true" signature="2923:2947" ph="SELECT * FRO... all_report" />
+            <marker date="1516116142543" expanded="true" signature="3052:3392" ph="..." />
+            <marker date="1516116142543" expanded="false" signature="3064:3089" ph="..." />
+            <marker date="1516116142543" expanded="true" signature="3090:3392" ph="..." />
+            <marker date="1516116142543" expanded="true" signature="4806:6019" ph="SELECT ittou... all_hotels" />
+            <marker date="1516116142543" expanded="true" signature="7602:7633" ph="SELECT price... all_old_report" />
+            <marker date="1516116142543" expanded="true" signature="7602:7634" ph="SELECT price... ${$table}" />
+            <marker date="1516116142543" expanded="true" signature="7974:8059" ph="INSERT INTO a103_hotelstzpua.all_old_report... " />
+            <marker date="1516116142543" expanded="true" signature="8018:8059" ph="SELECT * FRO... all_report" />
           </folding>
         </state>
       </provider>
@@ -266,35 +273,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugin/allhotels/js/report.js">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/test_api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="46" column="48" lean-forward="false" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+        <state relative-caret-position="130">
+          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugin/allhotels/php/hotel_report.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        <state relative-caret-position="626">
+          <caret line="107" column="17" lean-forward="false" selection-start-line="107" selection-start-column="15" selection-end-line="107" selection-end-column="17" />
           <folding>
             <element signature="n#update_report#0;n#!!top" expanded="false" />
-            <element signature="n#show_table#0;n#!!top" expanded="false" />
             <element signature="n#update_base#0;n#!!top" expanded="false" />
-            <marker date="1516093335334" expanded="true" signature="541:565" ph="SELECT * FRO... all_report" />
-            <marker date="1516093335334" expanded="true" signature="598:616" ph="..." />
-            <marker date="1516093335334" expanded="true" signature="835:878" ph="SELECT * FRO... all_report" />
-            <marker date="1516093335334" expanded="true" signature="904:922" ph="..." />
-            <marker date="1516093335334" expanded="true" signature="2781:2805" ph="SELECT * FRO... all_report" />
-            <marker date="1516093335334" expanded="true" signature="2911:3251" ph="..." />
-            <marker date="1516093335334" expanded="false" signature="2923:2948" ph="..." />
-            <marker date="1516093335334" expanded="true" signature="2949:3251" ph="..." />
-            <marker date="1516093335334" expanded="true" signature="3510:4153" ph="..." />
-            <marker date="1516093335334" expanded="true" signature="4346:5559" ph="SELECT ittou... all_hotels" />
-            <marker date="1516093335334" expanded="true" signature="7074:7098" ph="SELECT * FRO... all_report" />
-            <marker date="1516093335334" expanded="true" signature="7126:7144" ph="..." />
+            <element signature="n#get_price#0;n#!!top" expanded="false" />
+            <element signature="n#update_old_report#0;n#!!top" expanded="false" />
+            <marker date="1516116142543" expanded="true" signature="682:706" ph="SELECT * FRO... all_report" />
+            <marker date="1516116142543" expanded="true" signature="739:757" ph="..." />
+            <marker date="1516116142543" expanded="true" signature="976:1019" ph="SELECT * FRO... all_report" />
+            <marker date="1516116142543" expanded="true" signature="1045:1063" ph="..." />
+            <marker date="1516116142543" expanded="true" signature="2923:2947" ph="SELECT * FRO... all_report" />
+            <marker date="1516116142543" expanded="true" signature="3052:3392" ph="..." />
+            <marker date="1516116142543" expanded="false" signature="3064:3089" ph="..." />
+            <marker date="1516116142543" expanded="true" signature="3090:3392" ph="..." />
+            <marker date="1516116142543" expanded="true" signature="4806:6019" ph="SELECT ittou... all_hotels" />
+            <marker date="1516116142543" expanded="true" signature="7602:7633" ph="SELECT price... all_old_report" />
+            <marker date="1516116142543" expanded="true" signature="7602:7634" ph="SELECT price... ${$table}" />
+            <marker date="1516116142543" expanded="true" signature="7974:8059" ph="INSERT INTO a103_hotelstzpua.all_old_report... " />
+            <marker date="1516116142543" expanded="true" signature="8018:8059" ph="SELECT * FRO... all_report" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/allhotels/js/report.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="54" column="48" lean-forward="true" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
