@@ -20,38 +20,56 @@ jQuery( document ).ready(function($) {
         return get_price;
     }
 
-    $('.row_hotel').each(function () {
-        var new_price =  $(this ).find('.hotel_update_price').text();
-        var old_price =  $(this ).find('.hotel_price').text();
+    function fill_row(selector, bg) {
+        bg = bg || false;
+        $(selector).each(function () {
+            var new_price =  $(this ).find('.hotel_update_price').text();
+            var old_price =  $(this ).find('.hotel_price').text();
+            var status = $(this ).find('.link_hotel').text();
+            try {
+                new_price = new_price.split(' ');
+                old_price = old_price.split(' ');
 
-        try {
-            new_price = new_price.split(' ');
-            old_price = old_price.split(' ');
+                var price_old = parseInt(old_price[0]);
+                var price_new = parseInt(new_price[0]);
 
-            var price_old = parseInt(old_price[0]);
-            var price_new = parseInt(new_price[0]);
+                if(price_old < price_new){
+                    if(bg){
+                        $(this).css('background-color', '#fad67a');
+                    }
+                    $(this).find('.hotel_status').text('').append('<img src="http://hotels.t.zp.ua/wp-content/uploads/2018/up.png" width="50px">');
+                }
+                if(price_old > price_new){
+                    if(bg){
+                        $(this).css('background-color', '#fad67a');
+                    }
+                    $(this).find('.hotel_status').text('').append('<img src="http://hotels.t.zp.ua/wp-content/uploads/2018/down.png" width="50px">');
+                }
+                if(price_old == price_new){
+                    if(bg){
+                        $(this).css('background-color', '#3CB371');
+                    }
+                    $(this).find('.hotel_status').text('').append('<img src="http://hotels.t.zp.ua/wp-content/uploads/2018/ok.png" width="50px">');
+                }
+                if(status == 'Link is not defined'){
+                    if(bg){
+                        $(this).css('background-color', '#CD5C5C');
+                    }
 
-            if(price_old < price_new){
-                $(this).css('background-color', '#D2691E');
+                    $(this).find('.hotel_status').text('').append('<img src="http://hotels.t.zp.ua/wp-content/uploads/2018/alert-icon.png" width="50px">');
+                }
+            } catch (ex) {
+                console.log(ex);
             }
-            if(price_old == price_new){
-                $(this).css('background-color', '#3CB371');
-            }
-            if(price_old > price_new){
-                $(this).css('background-color', '#D2691E');
-            }
-        } catch (ex) {
-            console.log(ex);
-        }
 
-    });
+        });
 
-
-    $("tr>.hotel_status").each(function () {
-        var self =  $(this);
-        if ($(this).text() == 'Отель не найден') {
-            $(self ).parent().css('background-color', '#B22222');
-        }
-    });
+    }
+    if ( $('table tr').hasClass("row_hotel") ) {
+        fill_row('.row_hotel', true);
+    }
+    if($('table tr').hasClass("row_hotel_updated")){
+        fill_row('.row_hotel_updated', false);
+    }
 
 });
