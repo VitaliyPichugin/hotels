@@ -127,7 +127,7 @@ function update_base(){
                                     RIGHT JOIN all_meals
                                     ON all_region_list.meal_id=all_meals.meal_id 
                                     RIGHT JOIN all_regions
-                                    ON all_region_list.region_id=all_regions.region_id
+                                    ON all_hotels.region_id=all_regions.region_id 
                                     RIGHT JOIN all_countries
                                     ON all_regions.country_id=all_countries.country_id
                                     WHERE all_hotels.ittour_id IS TRUE");
